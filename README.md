@@ -1,51 +1,50 @@
 # RoPhimLegacy - Movie Discovery & Recommendation System
 
-**RoPhimLegacy** là một ứng dụng quản lý và đề xuất phim hiện đại, được xây dựng với kiến trúc Fullstack mạnh mẽ. Dự án tập trung vào trải nghiệm người dùng mượt mà và khả năng phân tích phim thông qua AI.
+**RoPhimLegacy** is a modern movie management and recommendation application, built with a robust Fullstack architecture. The project focuses on a smooth user experience and movie analysis capabilities through AI.
 
-## 🚀 Công nghệ sử dụng
+## Technologies Used
 
 ### Backend (Server)
 
 - **Java 21** & **Spring Boot 3.2.2**
 - **Spring Security** & **JWT** (Stateless/Stateful Hybrid Authentication)
-- **Spring Data MongoDB**: Quản lý cơ sở dữ liệu NoSQL
-- **Google Gemini API**: Hỗ trợ tính năng AI Service
-- **Maven**: Quản lý thư viện và vòng đời dự án
+- **Spring Data MongoDB**: NoSQL database management
+- **Google Gemini API**: AI Service feature support
+- **Maven**: Dependency and project lifecycle management
 
 ### Frontend (Client)
 
 - **React** (Vite)
-- **Axios**: Xử lý request API với Interceptors
-- **CSS Modern**: Giao diện Dark Mode tối ưu trải nghiệm
+- **Axios**: API request handling with Interceptors
+- **Modern CSS**: Dark Mode interface for optimized experience
 
 ### Testing & Tools
 
-- **Cypress**: Kiểm thử E2E
-- **JUnit 5 & Mockito**: Unit Test cho Service layer
-- **MongoDB Compass**: Quản lý dữ liệu trực quan
+- **Cypress**: E2E Testing
+- **JUnit 5 & Mockito**: Unit Test for the Service layer
+- **MongoDB Compass**: Visual data management
 
-## ✨ Tính năng chính
+## Key Features
 
-- **Khám phá phim**: Danh sách phim phong phú với hình ảnh chất lượng cao từ TMDB.
-- **Đề xuất thông minh**: Hệ thống gợi ý phim dựa trên sở thích người dùng.
-- **Hệ thống đánh giá**: Người dùng có thể xếp hạng phim (Excellent, Okay, Bad, Terrible) và viết review.
-- **Quản trị viên (Admin)**: Quyền chỉnh sửa và xóa phim trực tiếp trên giao diện.
-- **Bảo mật cao**: Hệ thống Authentication đa lớp chống lại các cuộc tấn công XSS và CSRF.
+- **Movie Discovery**: Extensive movie list with high-quality images from TMDB.
+- **Smart Recommendation**: Movie recommendation system based on user preferences.
+- **Rating System**: Users can rate movies (Excellent, Okay, Bad, Terrible) and write reviews.
+- **Administrator (Admin)**: Privileges to edit and delete movies directly on the interface.
+- **High Security**: Multi-layer Authentication system to protect against XSS and CSRF attacks.
 
-## 🛠 Cài đặt
+## Installation
 
-1. **Yêu cầu hệ thống**: Cài đặt sẵn Java 21, Node.js và MongoDB Local.
-2. **Cấu hình biến môi trường**: Sao chép `.env.example` thành `.env` và điền các thông tin:
+1. **System Requirements**: Pre-installed Java 21, Node.js, and Local MongoDB.
+2. **Environment Variables Configuration**: Copy `.env.example` to `.env` and fill in the information:
    - `MONGODB_URI`
    - `GOOGLE_API_KEY`
-   - `SECRET_KEY` (Cho JWT)
-3. **Chạy Backend**:
-   ```bash
-   cd ./Server/RoPhimLegacyServer
-   mvn spring-boot:run
-   ```
-4. **Chạy Frontend**:
-   ```bash
-   cd ./Client/ro-phim-legacy-client
-   npm run dev
-   ```
+   - `SECRET_KEY` (For JWT)
+3. **Run Backend**:Bash
+
+   `cd ./Server/RoPhimLegacyServer
+mvn spring-boot:run`
+
+4. **Run Frontend**:Bash
+
+   `cd ./Client/ro-phim-legacy-client
+npm run dev`
